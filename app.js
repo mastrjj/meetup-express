@@ -75,8 +75,8 @@ app.post('/upcoming_events', (req, res) => {
   // make get request
   axios.get(url, config)
     .then((response) => {
-      res.send(response.data.events[0]);
-      console.log(response.data.events[0]);
+      res.send(response.data.events);
+      console.log(response.data.events);
     })
     .catch((err) => {
       res.send(err);
