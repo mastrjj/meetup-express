@@ -99,7 +99,7 @@ app.post('/upcoming_events', (req, res) => {
           'name' : item.name,
           'description' : item.description
         })
-        console.log(i, item.local_time, item.local_date, item.name);
+        // console.log(i, item.local_time, item.local_date, item.name);
       });
 
       res.send(events_formatted);
